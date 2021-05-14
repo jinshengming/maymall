@@ -8,7 +8,7 @@
         <version>2.0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>com.may.service.api</groupId>
     <artifactId>may-service-api</artifactId>
     <packaging>pom</packaging>
     <modules>
@@ -16,6 +16,11 @@
     </modules>
 
     <dependencies>
+        <dependency>
+            <groupId>com.may</groupId>
+            <artifactId>may-common</artifactId>
+            <version>2.0.1</version>
+        </dependency>
         <dependency>
             <groupId>javax.persistence</groupId>
             <artifactId>persistence-api</artifactId>
