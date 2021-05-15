@@ -7,17 +7,21 @@
         <groupId>com.may</groupId>
         <version>2.0.1</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.may.service.api</groupId>
     <artifactId>may-service-api</artifactId>
+    <version>2.0.1</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>may-service-goods-api</module>
     </modules>
 
     <dependencies>
         <dependency>
-            <groupId>com.may</groupId>
+            <groupId>com.may.common</groupId>
             <artifactId>may-common</artifactId>
             <version>2.0.1</version>
         </dependency>
@@ -25,6 +29,15 @@
             <groupId>javax.persistence</groupId>
             <artifactId>persistence-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
