@@ -32,7 +32,8 @@ public class BrandController extends BaseController {
     @ApiOperation(value = "分页条件查询品牌信息")
     public Result<List<BrandVO>> select(@RequestBody BrandDTO record) {
         Page<BrandDTO> page = brandService.select(record);
-        return handlePage(BrandStruct.INSTANCE.toVo(page));
+        List<BrandVO> vos = BrandStruct.INSTANCE.toVo(page.getResult());
+        return handlePage(page, vos);
     }
 
 

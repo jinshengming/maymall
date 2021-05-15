@@ -14,13 +14,13 @@ public class BaseController {
     /**
      * 组装分页
      * @param page .
+     * @param data .
      * @author jinshengming
      * @date 2021/5/15 13:27
      * @return {com.may.common.Result<java.util.List<T>>}
      */
-    public <T> Result<List<T>> handlePage(Page<T> page) {
+    public <T> Result<List<T>> handlePage(Page<?> page, List<T> data) {
         Result<List<T>> result = Result.newResult();
-        List<T> data = page.getResult();
         result.setPageCount(page.getPages());
         result.setTotal(page.getTotal());
         result.setPageNum(page.getPageNum());

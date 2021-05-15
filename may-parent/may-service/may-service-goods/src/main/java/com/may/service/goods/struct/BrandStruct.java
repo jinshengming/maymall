@@ -22,7 +22,7 @@ public interface BrandStruct {
      * @date 2021/5/15 12:50
      * @return {java.util.List<com.may.common.vo.goods.BrandVO>}
      */
-    Page<BrandVO> toVo(Page<BrandDTO> records);
+    List<BrandVO> toVo(List<BrandDTO> records);
 
     /**
      * 转vo

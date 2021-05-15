@@ -14,7 +14,7 @@ public class Result<T> implements Serializable {
 
     private String message;
 
-    private Status code;
+    private String code;
 
     private Integer pageNum;
 
@@ -28,7 +28,8 @@ public class Result<T> implements Serializable {
 
     public Result() {
         this.success = true;
-        this.code = Status.SUCCESS;
+        this.code = Status.SUCCESS.code;
+        this.message = Status.SUCCESS.msg;
     }
 
     public static <T> Result<T> newResult() {
@@ -38,10 +39,31 @@ public class Result<T> implements Serializable {
 
     enum Status {
 
-        SUCCESS("20000");
+        SUCCESS("20000", "成功");
 
-        Status(String code) {
+        private String code;
 
+        private String msg;
+
+        public String getCode() {
+            return code;
+        }
+
+        public void setCode(String code) {
+            this.code = code;
+        }
+
+        public String getMsg() {
+            return msg;
+        }
+
+        public void setMsg(String msg) {
+            this.msg = msg;
+        }
+
+        Status(String code, String msg) {
+            this.code = code;
+            this.msg = msg;
         }
     }
 
