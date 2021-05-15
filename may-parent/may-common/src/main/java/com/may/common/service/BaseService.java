@@ -4,7 +4,7 @@ import com.github.pagehelper.Page;
 
 import java.util.List;
 
-public interface BasicService {
+public interface BaseService {
 
 
 

@@ -1,6 +1,6 @@
 package com.may.common.dto.goods;
 
-import com.may.common.dto.BasicDTO;
+import com.may.common.BaseEntity;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +8,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class BrandDTO extends BasicDTO {
+public class BrandDTO extends BaseEntity {
 
     @ApiModelProperty(value = "品牌id")
     private Integer id;

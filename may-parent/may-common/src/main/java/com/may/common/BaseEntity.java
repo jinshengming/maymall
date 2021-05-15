@@ -1,18 +1,16 @@
-package com.may.common.vo;
+package com.may.common;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.may.common.util.PageI;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
 
+
 @Getter
 @Setter
-public class BasicVO implements Serializable {
+public class BaseEntity implements Serializable {
 
-
-
-    @JsonIgnore
     private PageI page;
+
 }

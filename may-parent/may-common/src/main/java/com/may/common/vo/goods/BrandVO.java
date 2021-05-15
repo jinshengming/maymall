@@ -1,16 +1,14 @@
 package com.may.common.vo.goods;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.may.common.util.PageI;
-import com.may.common.vo.BasicVO;
+import com.may.common.BaseEntity;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class BrandVO extends BasicVO {
+public class BrandVO extends BaseEntity {
 
 
     @ApiModelProperty(value = "品牌id")

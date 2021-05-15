@@ -3,9 +3,8 @@ package com.may.service.goods.service.impl;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.may.common.dto.goods.BrandDTO;
-import com.may.common.service.impl.BasicServiceImpl;
+import com.may.common.service.impl.BaseServiceImpl;
 import com.may.common.util.PageI;
-import com.may.common.vo.goods.BrandVO;
 import com.may.service.api.goods.pojo.Brand;
 import com.may.service.goods.mapper.BrandMapper;
 import com.may.service.goods.service.BrandService;
@@ -16,7 +15,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Service
-public class BrandServiceImpl extends BasicServiceImpl implements BrandService {
+public class BrandServiceImpl extends BaseServiceImpl implements BrandService {
 
 
     @Resource

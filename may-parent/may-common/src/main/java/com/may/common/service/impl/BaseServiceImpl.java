@@ -1,11 +1,11 @@
 package com.may.common.service.impl;
 
 import com.github.pagehelper.Page;
-import com.may.common.service.BasicService;
+import com.may.common.service.BaseService;
 
 import java.util.List;
 
-public class BasicServiceImpl implements BasicService {
+public class BaseServiceImpl implements BaseService {
 
 
 

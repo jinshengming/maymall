@@ -2,7 +2,7 @@ server:
   port: 9070
 spring:
   application:
-    name: goods
+    name: service-goods
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:

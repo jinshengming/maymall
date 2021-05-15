@@ -2,9 +2,9 @@ package com.may.service.goods.service;
 
 import com.github.pagehelper.Page;
 import com.may.common.dto.goods.BrandDTO;
-import com.may.common.service.BasicService;
+import com.may.common.service.BaseService;
 
-public interface BrandService extends BasicService {
+public interface BrandService extends BaseService {
 
 
 
